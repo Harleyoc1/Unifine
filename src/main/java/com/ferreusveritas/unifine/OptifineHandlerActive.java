@@ -33,12 +33,12 @@ public class OptifineHandlerActive extends OptifineHandlerBase {
 	public ShaderState determineShaderState() {
 		IShaderPack pack = Shaders.getShaderPack();
 		
-		if(pack == null || pack instanceof ShaderPackNone) {
+		if (pack == null || pack instanceof ShaderPackNone) {
 			return ShaderState.OFF;
 		}
 		
-		if(pack instanceof ShaderPackDefault) {
-			return ShaderState.DEFAULT;
+		if (pack instanceof ShaderPackDefault) {
+			return ShaderState.INTERNAL;
 		}
 		
 		return ShaderState.SHADER;

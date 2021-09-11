@@ -3,7 +3,7 @@ package com.ferreusveritas.unifine;
 public enum ShaderState {
 	NULL(false),//No Optifine installed
 	OFF(false),
-	DEFAULT(false),
+	INTERNAL(true),
 	SHADER(true);
 	
 	private boolean doesShading;
@@ -12,7 +12,7 @@ public enum ShaderState {
 		this.doesShading = doesShading;
 	}
 	
-	public boolean DoesShading() {
+	public boolean doesShading() {
 		return doesShading;
 	}
 }

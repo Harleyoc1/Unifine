@@ -1,4 +1,5 @@
 package com.ferreusveritas.unifine;
+
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.function.Function;
@@ -88,7 +89,7 @@ public class Unifine {
 	}
 	
 	public static boolean isShaderActive() {
-		return currentShaderState.DoesShading();
+		return currentShaderState.doesShading();
 	}
 	
 	private ShaderState determineShaderState() {
